@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!---whenever we use FORM an http request is sent-->
+    <form action="https://www.google.com/search?">
+        <!--action="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" -->
+        <!-- "ACTION" attribute sends the data to mentioned url or to the destination-->
+        <p>
+            <label for="username">Enter a UserName:</label>
+            <!--lABLES and ID are to identify-->
+            <input id="username" type="text" placeholder="UserName" name="username">
+            <!--NAME is used to send data to the server-->
+            <!--TYPE defines the type of text or input to be taken-->
+            <!--PLACEHOLDER shows text before anything is put inside the textbox-->
+        </p>
+        <p>
+            <label for="password">Enter The Password: </label>
+            <input id="password" type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <label for="color">Choose the color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input id="number" type="number" placeholder="Enter a Number" min="1" max="1000" name="number">
+        </p>
+        <button>Submit</button>
+        <input type="submit" value="Click Me!!">
+        <!--this is another way of creation a button to submit the form-->
+    </form>
+    <hr>
+    <h2>Hijacking searchs</h2>
+    <h3>search Google</h3>
+    <form action="https://www.google.com/search?">
+        <p>
+
+            <input type="text" name="query">
+            <button>search On google</button>
+        </p>
+        <h3>Search YouTube</h3>
+    </form>
+    <form action="https://www.youtube.com/">
+        <input type="text" name="search">
+        <button>search On youtube</button>
+    </form>
+    <hr>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree" id="agree">
+        <!--CHECKBOXES-->
+        <label for="agree">I agree to T&C</label>
+        <p>
+        <p><b>Select the size for your T-shirt</b></p>
+        <!--for radio button to select only one option the name has to same-->
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="s">
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <!--select is used to select from options and give options-->
+            <label for="">Please Select a brand !!</label>
+            <select name="brand" id="brand">
+                <option value="--">--</option>
+                <option value="Puma">Puma</option>
+                <option value="Nke">Nike</option>
+                <option value="us polo">U.S POLO</option>
+                <option value="LV">LV</option>
+                <option value="Zara">Zara</option>
+                <option value="h&m">H&M</option>
+            </select>
+        </p>
+        <p>
+            <!--Range is used to define min and max of anything-->
+            <label for="rate">Rate the brand :</label>
+            <input type="range" id="rate" min="1" max="100" value="55" name="rating">
+        </p>
+        <hr>
+        <p>
+            <!--textarea is used to define the amount of area occupied by the text box-->
+            <label for="requests">Any Special Request ?</label>
+            <textarea id="requests" rows="5" cols="40" name="requests" placeholder="Write your request here !!"></textarea>
+            
+        </p>
+        <button>SUBMIT</button>
+        <!--until the checkbox is clicked it won't submit-->
+    </form>
+
+</body>
+
+</html>
