@@ -1,0 +1,77 @@
+div {
+    width: 200px;
+    height: 300px;
+    background-color: coral;
+}
+
+h1 {
+    background-color: cornflowerblue;
+    width: 400px;
+    border-width: 3px;
+    border-color: rgb(223, 219, 20);
+    border-style: solid;
+    margin: 50px 100px;
+}
+
+/* 
+there are three things in border:
+1) Border-Width
+2) Border-color
+3) Border-style (dash/dotted/etc)
+*/
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* box-sizing: border-box; */
+    border-radius: 30px;
+    /*padding-bottom: 2%; */
+    /*padding for all the sides can be done together */
+    padding: 5px 1px 0px 2px;
+    /*      top|right|bottom|left 
+         when only one or two value is written others are taken as 0px as default */
+    margin: 50px 100px;
+}
+span{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#two {
+    background-color: #b5838d;
+    border-width: 5px;
+    border-color: plum;
+    border-style: dashed;
+    /* you can accsess multiple properties at a time */
+    /*ex: border: medium dashed green 
+                  widhth|style|color
+    */
+    border-radius: 30px;
+    padding-top: 2%;
+    margin: 200px;
+}
+
+#three {
+    background-color: #6d6875;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border: 4px solid black;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+button {
+    padding: 10px 20px;
+    /* vertical || horizontal*/
+    /* padding: 10px ;  (applies to all four sides)
+     padding: 10px 20px; (top | horizontal | bottom 
+     padding: 5px 1px 0px 2px; ( top|right|bottom|left )*/
+    /* same sequence is used for the margin  */
+    margin: 50px 100px;
+}
+
