@@ -1,0 +1,61 @@
+html{    /* ROOT ELEMENT */
+    font-size: 30px;
+}
+section {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: #e5989b;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+h2 {
+    font-size: 2em;
+    /* using "em" means here h2 will be twice the size of its parent element (that is article)
+    but in case of properties like margin and padding 1em is equal to the size of the  element itself*/
+    margin-left: 1em;
+    /*its will be in respect to the font-size of h2 that is the element itself*/
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+article {
+    font-size: 20px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+ul{
+    font-size: 1.5em;
+}
+/* rem(root ems) : if the root font-size is 20px, 1rem is always 20px, 2rem is always 40px,etc*/
+#rems h2{
+    font-size: 3rem;
+}
+#rems h3{
+    font-size: 2rem;
+}
+#rems ul{
+    font-size: 0.8rem;   /*always based on the size of the root element*/
+}
