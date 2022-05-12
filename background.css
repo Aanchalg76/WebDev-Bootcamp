@@ -1,0 +1,21 @@
+section {
+    width: 80%;
+    height: 800px;
+    background-image: url("https://images.unsplash.com/photo-1652178941294-63e8232f1f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60"); 
+    background-size: cover; /*can also use contain or auto but cover is best */
+    background-position: bottom; /*bottom of the image is being used */
+    /*background: center/40% no-repeat url("https://images.unsplash.com/photo-1652178941294-63e8232f1f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60", blueviolet); */
+    margin: 0 auto;
+}
+    /* background: no-repeat url("" center/cover(or) 20%): ; */
+/* if using background size that value may only be include immediatly after <position> seperated with the /" character, for ex: "center/80%" */
+/*like used in backgroung: no-repeat*/
+/*you can add multiple images*/
+ 
+
+/* USE THIS LINK FOR IMAGE: https://unsplash.com/ */
+h1{
+    font-size: 100px;
+    color: white;
+    text-align: center;
+} 
