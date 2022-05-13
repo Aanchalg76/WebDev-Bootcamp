@@ -1,0 +1,14 @@
+img {
+    width: 30%;  /*instead of using px use % its better */
+   /* margin: 1.66666%; */
+    margin: calc(10%/6)  ;  /* 3 imgs so 30x3 = 90% covered and 10% left. and we need 6 number of spaces b/w imgs so 10/6*/
+}
+
+nav {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+}
