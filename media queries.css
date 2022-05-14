@@ -1,0 +1,68 @@
+body {
+    font-family: 'Open Sans' , sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+    color: red;
+}
+nav{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+ul,li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width:500px) {  /* when the (min-width: 800 and above) width is exactly 800px then only apply this condition*/
+    h1{
+        color: orange;  /* when you shrink the window to exactly 800 px the text will change it's color into peru*/
+    }
+}
+/*(min-width:600px) and (max-width:800px) --> this means between them the condition will apply*/
+ /*@media(max-width:1000px){
+    h1{
+        color: purple   
+    }
+} since it writen at the end only this condition will be considered*/
+@media (min-width:1000px) {  
+    h1{
+        color: orangered;  
+    }
+}
+@media (min-width:1500px) { 
+    h1{
+        color: green;  
+    }
+}
+/*@media (orientation: landscape) {  
+  body{
+        background-color: cadetblue; 
+    }
+} */
+
+@media (max-width: 786px) {  
+    h1{
+          font-size: 4em; 
+      }
+    nav, nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 576px) {  
+    h1{
+          font-size: 2em; 
+      }
+  }
